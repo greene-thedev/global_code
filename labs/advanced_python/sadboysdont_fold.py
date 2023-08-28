@@ -1,4 +1,4 @@
-from functools import fold
+from functools import reduce
 
 # defining function
 def join_strings(x, y):
@@ -11,6 +11,6 @@ words = ['jeremiah ', 'greene ', 'ackon ']
 
 #joining words using fold
 
-print(fold(join_strings, words))
+print(reduce(join_strings, words))
 
 
