@@ -13,6 +13,6 @@ def get_url():
 # giving the button logic    
 button = Button(2)
 button.when_pressed = get_url
-# button.when_released =
 
+# don't forget to pause... Import it first though.
 pause()
