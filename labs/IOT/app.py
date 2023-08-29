@@ -1,8 +1,9 @@
 # importing package for making api requests
 import requests
 # importing GPIO packages
-from gpiozero import Button
+from gpiozero import Button, LED
 from signal import pause
+from time import sleep
 
 # making API call a function
 def get_url():
@@ -12,7 +13,11 @@ def get_url():
 
 # giving the button logic    
 button = Button(2)
-button.when_pressed = get_url
 
-# don't forget to pause... Import it first though.
+# To-do: add configuration for LED 
+red = LED()
+button.when_pressed = get_url 
+# To-do: add led logic
+
+
 pause()
